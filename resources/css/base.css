@@ -130,6 +130,19 @@ select {
 
 /* Reusable Component - Product List */
 
+.subcontainer-top {
+  background-color: ivory;
+}
+
+.subcontainer-bottom {
+  background-color: #A6A0D0;
+  padding: 20px 0;
+}
+
+.subcontainer-top h2 {
+  color: #A6A0D0;
+}
+
 .product-list-section {
   padding: 2rem 5rem 3.75rem 5rem;
 }
@@ -218,10 +231,14 @@ ul.breadcrumb li+li:before {
     content: "/\00a0";
 }
 ul.breadcrumb li a {
-    color: hsla(0, 0%, 29%, 1);
+    color: #A6A0D0;
     text-decoration: none;
 }
 
+ul.breadcrumb li a:hover {
+    color: black;
+    text-decoration: bold;
+  }
 
 @media only screen and (max-width: 1100px) {
   .product-list {
@@ -372,7 +389,7 @@ footer .links {
 
 footer a {
   color: hsla(0, 0%, 29%, 1);
-  
+
 }
 
 footer a:hover {
