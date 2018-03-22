@@ -27,12 +27,17 @@
       <a href="products.html">Products</a>
       <a href="about.html">About Us</a>
       <a href="sell.html">Sell</a>
-      <a href="#">Help</a>
+      <a href="help.html">Help</a>
     </nav>
 
     <!-- Sell Product Form -->
 
     <div id="main" class="sell">
+      <ul class="breadcrumb">
+        <li><a class="location" href="index.html">Home</a></li>
+        <li><a class="location" href="#">Sell</a></li>
+      </ul>
+
       <h3>Sell</h3>
       <form>
         <div id="name" class="field">
@@ -40,23 +45,22 @@
           <input type="text" name="name" placeholder="Name of product">
         </div>
         <div id="price" class="field">
-          <label for="price">Price</label>
-          <input type="number" name="price">
+          <label for="price">Price $US</label>
+          <input type="currency" name="price">
         </div>
         <div id="quantity" class="field">
-          <label for="quantity">Quantity</label>
-          <select name="quantity">
-            <option value="100"><100</option>
-            <option value="200">100-200</option>
-            <option value="300">200-300</option>
-            <option value="400">300-400</option>
-            <option value="500">>500</option>
-          </select>
+          <label for="quantity">Quantity (in units of 10)</label>
+          <input type="number" name="quantity" min="0" step="10">
         </div>
         <div id="description" class="field">
           <label for="description">Description</label>
           <textarea type="text" name="description" placeholder="Description of product"></textarea>
         </div>
+        <div id="photos">
+               <label for="photos">
+                   Image Upload</label>
+               <input type="file" class="form-control" id="image" name="image"  required>
+           </div>
         <a href="#" class="button" id="submit">Submit</a>
       </form>
     </div>

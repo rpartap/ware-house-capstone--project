@@ -7,7 +7,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  font-size: inherit;
+  font-size: 35px;
   font-stretch: condensed;
   color: hsla(0, 100%, 100%, 1);
 
@@ -19,7 +19,6 @@
 }
 
 .information {
-  border-bottom: 5px solid #A6A0D0;
   padding-top: 1.75rem;
 }
 
@@ -45,22 +44,14 @@
   background-color: #A6A0D0;
 }
 
-.join button {
+.join a.button:hover {
+  color: #A6A0D0;
   background-color: ivory;
-}
-
-.join button:hover {
-
 }
 
 .join h3 {
   font-size: 20px;
   color: hsla(0, 0%, 29%, 1);
-}
-
-.join h3:hover {
-  font-size: 20px;
-  color: #A6A0D0;
 }
 
 @media only screen and (max-width: 735px) {

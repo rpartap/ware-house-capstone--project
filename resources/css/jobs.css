@@ -12,6 +12,10 @@
   font-size: inherit;
 }
 
+.jobs h4 {
+  color: hsla(0, 0%, 29%, 1);
+}
+
 form {
   display: grid;
   grid-template-columns: repeat(2, 2fr) 1fr;
@@ -22,6 +26,11 @@ form {
 #main form .button {
   height: fit-content;
   padding: 1.14rem 0;
+}
+
+#main form .button:hover {
+  color: ivory;
+  background-color: #A6A0D0;
 }
 
 .job-list {
@@ -42,4 +51,9 @@ form {
 #see-all-jobs {
   justify-self: center;
   margin-top: 3.6875rem;
+}
+
+a#see-all-jobs.button:hover {
+  color: ivory;
+  background-color: #A6A0D0;
 }

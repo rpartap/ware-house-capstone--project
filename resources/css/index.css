@@ -17,8 +17,16 @@
   font-size: 30px;
 }
 
+.hero a {
+  color: hsla(0, 0%, 29%, 1);
+}
+
+.hero a:hover {
+  color: ivory;
+  cursor: pointer;
+}
+
 .products {
-  padding-bottom: 2rem;
   background-color: ivory;
   width: 100%;
 }
