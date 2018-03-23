@@ -13,75 +13,75 @@
     <!-- Header -->
 
     <header>
-      <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png"></a>
-      </div>
-      <div class="search-bar">
-        <input type="text" name="search" placeholder="Search for items">
+      <section class="image-container" aria-label="banner">
+        <a href="index.html"><img src="resources/img/home.png" alt="large dining room table with chairs"></a>
+      </section>
+      <nav class="search-bar" aria-label="site-navigation">
+        <input type="text" role="search-bar" aria-label="search-input" name="search" placeholder="Search for items">
         <a href="" class="icon"><img src="resources/img/search.svg"></a>
-      </div>
-      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
+      </nav>
+      <a role="button" aria-label="shopping-cart" href="cart.html" class="button cart">Cart<img src="resources/img/cart.svg"></a>
     </header>
-    <nav>
-      <a href="deals.html">Today's Deals</a>
-      <a href="products.html">All Products</a>
-      <a href="about.html">About Us</a>
-      <a href="sell.html">Sell</a>
-      <a href="help.html">Help</a>
+    <nav aria-label="main-navigation">
+      <a role="navigation-link" aria-label="site-navigation" href="deals.html">Today's Deals</a>
+      <a role="navigation-link" aria-label="site-navigation" href="products.html">All Products</a>
+      <a role="navigation-link" aria-label="site-navigation" href="about.html">About Us</a>
+      <a role="navigation-link" aria-label="site-navigation" href="sell.html">Sell</a>
+      <a role="navigation-link" aria-label="site-navigation" href="help.html">Help</a>
     </nav>
 
     <!-- Hero Section -->
 
-    <div id="main" class="landing">
-      <div class="hero">
-        <h2><a href="#">Shop Dining Tables</a><h2>
-      </div>
+    <main id="main" class="landing" aria-label="main-content">
+      <section class="hero" aria-role="presentation">
+        <h2><a role="link" aria-role="naiviagtion-link" href="#">Shop Dining Tables</a><h2>
+      </section>
 
     <!-- Products Preview Section -->
 
-      <div class="products">
+      <article class="products" role="article" aria-label="article">
 
         <!-- Product Categories -->
-        <div class="subcontainer-top">
-          <h2>Shop by category</h2>
-          <div class="product-list categories">
-            <a href="living.html" class="product-category">
-              <div class="image-container">
-                <img src="resources/img/home/living-room.jpg">
+        <section class="subcontainer-top" role="region" aria-role="presentation">
+          <h2 aria-role="sub-heading">Shop by category</h2>
+          <div class="product-list categories" aria-role="presentation">
+            <a role="navigation" aria-role="navigation-link" href="living.html" class="product-category">
+              <div class="image-container" aria-role="presentation">
+                <img src="resources/img/home/living-room.jpg" alt="living room with a couch table and chair">
               </div>
 
             </a>
-            <a href="#" class="product-category">
-              <div class="image-container">
-                <img src="resources/img/home/bedroom.jpg">
+            <a role="navigation" aria-role="navigation-link" href="bedroom.html" class="product-category">
+              <div class="image-container" aria-role="presentation">
+                <img src="resources/img/home/bedroom.jpg" alt="bedroom with large bed and nightstand">
               </div>
 
             </a>
-            <a href="#" class="product-category">
-              <div class="image-container">
-                <img src="resources/img/home/bathroom.jpg">
+            <a role="navigation" aria-role="navigation-link" href="bathroom.html" class="product-category">
+              <div class="image-container" aria-role="presentation">
+                <img src="resources/img/home/bathroom.jpg" alt="bathroom with a cast iron tub">
               </div>
 
             </a>
-            <a href="#" class="product-category">
-              <div class="image-container">
-                <img src="resources/img/home/dining-room.jpg">
+            <a role="navigation" aria-role="navigation-link" href="dining.html" class="product-category">
+              <div class="image-container" aria-role="presentation">
+                <img src="resources/img/home/dining-room.jpg" alt="large wooden table with black chairs">
               </div>
             </a>
           </div>
-        </div>
+        </section>
 
         <!-- Recently Viewed Products -->
-        <div class="subcontainer-bottom">
-          <h2>Recently Viewed</h2>
-          <div class="product-list">
+        <div class="subcontainer-bottom" role="region" aria-role="presentation">
+          <h2 aria-role="sub-heading">Recently Viewed</h2>
+          <div class="product-list" aria-role="presentation">
             <a href="#" class="product-item">
               <div class="image-container">
-                <img src="resources/img/home/yellow-chair.jpg">
+                <img src="resources/img/home/yellow-chair.jpg" alt="yellow slatted chair">
               </div>
-              <div class="description">
+              <div class="description" aria-role="presentation">
                 <h3>Yellow Chair</h3>
-                <span class="price">$189</span>
+                <span aria-label="price" class="price">$189</span>
               </div>
             </a>
             <a href="#" class="product-item">
