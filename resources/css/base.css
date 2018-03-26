@@ -163,10 +163,18 @@ select {
   margin-bottom: 3.75rem;
 }
 
+.product-list img {
+  width: 100%;
+}
+
 .product-category {
   border-radius: 2px;
   background-color: hsla(0, 0%, 100%, 1);
   border: solid 1px hsla(0, 0%, 91%, 1);
+}
+
+.product-category img {
+  width: 100%;
 }
 
 .product-category .description-category {
@@ -192,17 +200,17 @@ select {
   background-color: ivory;
 }
 
-
 .product-item h3 {
   margin-bottom: .75rem;
   color: hsla(0, 0%, 29%, 1);
   position: relative;
   display: block;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .product-item .price {
   color: hsla(0, 0%, 29%, 1);
+  font-size: 20px;
 }
 
 .product-item:hover {
@@ -287,6 +295,7 @@ header {
   display: flex;
   border-radius: 33px 53px 33px 53px;
   width: 100%;
+
 }
 
 .search-bar input {
@@ -335,6 +344,9 @@ nav {
   padding: 1.313rem 24.25rem 1.313rem 25rem;
   background-color: #A6A0D0;
   color: ivory;
+}
+
+nav a {
   font-size: 20px;
 }
 

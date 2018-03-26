@@ -11,22 +11,24 @@
     <!-- Header -->
 
     <header>
-      <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png"></a>
-      </div>
-      <div class="search-bar">
-        <input type="text" name="search" placeholder="Search for items">
+      <section class="image-container" aria-label="banner">
+        <a href="index.html" aria-role="logo"><img src="resources/img/home.png" alt="Warehouse"></a>
+      </section>
+
+      <div class="search-bar" aria-label="site-navigation">
+        <input type="text" name="search" placeholder="Search for items" role="search-bar" aria-label="search-input">
         <a href="" class="icon"><img src="resources/img/search.svg"></a>
       </div>
-      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
+      <a role="button" href="cart.html" class="button cart" aria-label="shopping-cart" role="button">Cart<img src="resources/img/cart.svg"></a>
     </header>
-    <nav>
-      <a href="deals.html">Today's Deals</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About Us</a>
-      <a href="sell.html">Sell</a>
-      <a href="help.html">Help</a>
+    <nav class="main-nav" aria-label="main-navigation">
+      <a href="deals.html" role="navigation-link" aria-label="site-navigation">Today's Deals</a>
+      <a href="products.html" role="navigation-link" aria-label="site-navigation">All Products</a>
+      <a href="about.html" role="navigation-link" aria-label="site-navigation">About Us</a>
+      <a href="sell.html" role="navigation-link" aria-label="site-navigation">Sell</a>
+      <a href="help.html" role="navigation-link" aria-label="site-navigation">Help</a>
     </nav>
+
 
     <!-- Tables Section -->
 
@@ -75,29 +77,30 @@
     <!-- Footer -->
 
     <footer>
-      <img src="resources/img/home.png">
-      <div class="links">
-        <h4>Get to know us</h4>
-        <a href="#">About us</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="#">Investor relations</a>
-        <a href="#">Link</a>
+      <img src="resources/img/home.png" alt="">
+      <div class="links" aria-label="footer-navigation" role="presentation">
+        <h4 aria-role="sub-heading">Get to know us</h4>
+        <a href="about.html" role="navigation-link" aria-label="site-navigation">About us</a>
+        <a href="jobs.html" role="navigation-link" aria-label="site-navigation">Jobs</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Investor relations</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Link</a>
       </div>
-      <div class="links">
-        <h4>Make money with us</h4>
-        <a href="sell.html">Sell on WareHouse</a>
-        <a href="#">Become a vendor</a>
-        <a href="#">Fundraiser events</a>
-        <a href="#">Community outreach</a>
+      <div class="links" aria-label="footer-navigation" role="presentation">
+        <h4 aria-role="sub-heading">Make money with us</h4>
+        <a href="sell.html" role="navigation-link" aria-label="site-navigation">Sell on WareHouse</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Become a vendor</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Fundraiser events</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Community outreach</a>
       </div>
-      <div class="links">
-        <h4>Help</h4>
-        <a href="#">Contact us</a>
-        <a href="#">Conditions of use</a>
-        <a href="#">Report a problem</a>
-        <a href="#">Privacy Policy</a>
+      <div class="links" aria-label="footer-navigation" role="presentation">
+        <h4 aria-role="sub-heading">Help</h4>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Contact us</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Conditions of use</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Report a problem</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Privacy Policy</a>
       </div>
     </footer>
+
   </div>
 </body>
 </html>

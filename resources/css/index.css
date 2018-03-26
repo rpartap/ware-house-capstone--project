@@ -14,16 +14,21 @@
 .hero h2 {
   padding-top: 10rem;
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .hero a {
   color: hsla(0, 0%, 29%, 1);
+  font-size: 30px;
 }
 
 .hero a:hover {
   color: ivory;
   cursor: pointer;
+}
+
+.main-nav a {
+  font-size: 30px;
 }
 
 .products {

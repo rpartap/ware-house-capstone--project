@@ -12,39 +12,37 @@
 
     <!-- Header -->
 
-    <header>
-      <div class="image-container">
-        <a href="index.html"><img src="resources/img/home.png"></a>
-      </div>
-      <div class="search-bar">
-        <input type="text" name="search" placeholder="Search for items">
-        <a href="" class="icon"><img src="resources/img/search.svg"></a>
-      </div>
-      <a href="cart.html" class="button cart">Cart <img src="resources/img/cart.svg"></a>
-    </header>
-    <nav>
-      <a href="deals.html">Today's Deals</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About Us</a>
-      <a href="sell.html">Sell</a>
-      <a href="help.html">Help</a>
-    </nav>
+  <header>
+    <section class="image-container" aria-label="banner">
+      <a href="index.html" aria-role="logo"><img src="resources/img/home.png" alt="Warehouse"></a>
+    </section>
+
+    <div class="search-bar" aria-label="site-navigation">
+      <input type="text" name="search" placeholder="Search for items" role="search-bar" aria-label="search-input">
+      <a href="" class="icon"><img src="resources/img/search.svg"></a>
+    </div>
+    <a role="button" href="cart.html" class="button cart" aria-label="shopping-cart" role="button">Cart<img src="resources/img/cart.svg"></a>
+  </header>
+  <nav class="main-nav" aria-label="main-navigation">
+    <a href="deals.html" role="navigation-link" aria-label="site-navigation">Today's Deals</a>
+    <a href="products.html" role="navigation-link" aria-label="site-navigation">All Products</a>
+    <a href="about.html" role="navigation-link" aria-label="site-navigation">About Us</a>
+    <a href="sell.html" role="navigation-link" aria-label="site-navigation">Sell</a>
+    <a href="help.html" role="navigation-link" aria-label="site-navigation">Help</a>
+  </nav>
+
 
     <!-- About Section -->
 
-    <div id="main" class="about">
-      <ul class="breadcrumb">
-        <li><a class="location" href="index.html">Home</a></li>
-        <li><a class="location" href="#">About Us</a></li>
-      </ul>
+  <main id="main" class="about" aria-labelledby="main">
+    <ul class="breadcrumb" aria-role="presentation">
+      <li><a class="location" href="index.html" aria-role="nagigation-link">Home</a></li>
+      <li><a class="location" href="#" aria-role="nagigation-link">About Us</a></li>
+    </ul>
 
-      <h1>WAREHOUSE</h1>
-      <div class="information">
-        <ul class="breadcrumb">
-          <li><a class="location" href="index.html">Home</a></li>
-          <li><a class="location" href="#">About</a></li>
-        </ul>
-        <h3>About WareHouse</h3>
+    <h1>WAREHOUSE</h1>
+      <article class="information">
+        <h3 aria-role="sub-heading">About WareHouse</h3>
         <p>
           Looking to rebuild? Well, you've come to the right place. WareHouse
           is a family-owned and operated house wares and furniture business
@@ -57,42 +55,42 @@
           start selling their creations. In the post-war housing boom, WareHouse
           expanded across the mid-west to become a trusted name home furnishings.
         </p>
-          <p>
+        <p>
           Today, WareHouse has locations across the continental US but we still
           have that the hometown feel. So whether you're buying your first couch,
           re-modeling your kitchen, or moving to a new city, WareHouse will help your new place feel like home.
         </p>
-        <div class="join">
-          <h3>Join Our Team</h3>
-          <a href="jobs.html" class="button">View Our Job Listings</a>
-        </div>
-      </div>
-    </div>
+        <aside class="join" aria-role="complementary">
+          <h3 aria-role="sub-heading">Join Our Team</h3>
+          <a href="jobs.html" class="button" aria-role="button">View Our Job Listings</a>
+        </aside>
+      </article>
+    </main>
 
     <!-- Footer -->
 
     <footer>
-      <img src="resources/img/home.png">
-      <div class="links">
-        <h4>Get to know us</h4>
-        <a href="#">About us</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="#">Investor relations</a>
-        <a href="#">Link</a>
+      <img src="resources/img/home.png" alt="">
+      <div class="links" aria-label="footer-navigation" role="presentation">
+        <h4 aria-role="sub-heading">Get to know us</h4>
+        <a href="about.html" role="navigation-link" aria-label="site-navigation">About us</a>
+        <a href="jobs.html" role="navigation-link" aria-label="site-navigation">Jobs</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Investor relations</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Link</a>
       </div>
-      <div class="links">
-        <h4>Make money with us</h4>
-        <a href="sell.html">Sell on WareHouse</a>
-        <a href="#">Become a vendor</a>
-        <a href="#">Fundraiser events</a>
-        <a href="#">Community outreach</a>
+      <div class="links" aria-label="footer-navigation" role="presentation">
+        <h4 aria-role="sub-heading">Make money with us</h4>
+        <a href="sell.html" role="navigation-link" aria-label="site-navigation">Sell on WareHouse</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Become a vendor</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Fundraiser events</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Community outreach</a>
       </div>
-      <div class="links">
-        <h4>Help</h4>
-        <a href="#">Contact us</a>
-        <a href="#">Conditions of use</a>
-        <a href="#">Report a problem</a>
-        <a href="#">Privacy Policy</a>
+      <div class="links" aria-label="footer-navigation" role="presentation">
+        <h4 aria-role="sub-heading">Help</h4>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Contact us</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Conditions of use</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Report a problem</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Privacy Policy</a>
       </div>
     </footer>
   </div>

@@ -14,25 +14,25 @@
 
     <header>
       <section class="image-container" aria-label="banner">
-        <a href="index.html"><img src="resources/img/home.png" alt="large dining room table with chairs"></a>
+        <a href="index.html" aria-role="logo"><img src="resources/img/home.png" alt="Warehouse"></a>
       </section>
-      <nav class="search-bar" aria-label="site-navigation">
-        <input type="text" role="search-bar" aria-label="search-input" name="search" placeholder="Search for items">
+      <div class="search-bar" aria-label="site-navigation">
+        <input type="text" name="search" placeholder="Search for items" role="search-bar" aria-label="search-input">
         <a href="" class="icon"><img src="resources/img/search.svg"></a>
-      </nav>
-      <a role="button" aria-label="shopping-cart" href="cart.html" class="button cart">Cart<img src="resources/img/cart.svg"></a>
+      </div>
+      <a role="button" href="cart.html" class="button cart" aria-label="shopping-cart" role="button">Cart<img src="resources/img/cart.svg"></a>
     </header>
-    <nav aria-label="main-navigation">
-      <a role="navigation-link" aria-label="site-navigation" href="deals.html">Today's Deals</a>
-      <a role="navigation-link" aria-label="site-navigation" href="products.html">All Products</a>
-      <a role="navigation-link" aria-label="site-navigation" href="about.html">About Us</a>
-      <a role="navigation-link" aria-label="site-navigation" href="sell.html">Sell</a>
-      <a role="navigation-link" aria-label="site-navigation" href="help.html">Help</a>
+    <nav class="main-nav" aria-label="main-navigation">
+      <a href="deals.html" role="navigation-link" aria-label="site-navigation">Today's Deals</a>
+      <a href="products.html" role="navigation-link" aria-label="site-navigation">All Products</a>
+      <a href="about.html" role="navigation-link" aria-label="site-navigation">About Us</a>
+      <a href="sell.html" role="navigation-link" aria-label="site-navigation">Sell</a>
+      <a href="help.html" role="navigation-link" aria-label="site-navigation">Help</a>
     </nav>
 
     <!-- Hero Section -->
 
-    <main id="main" class="landing" aria-label="main-content">
+    <main id="main" class="landing" aria-labelledby="main">
       <section class="hero" aria-role="presentation">
         <h2><a role="link" aria-role="naiviagtion-link" href="#">Shop Dining Tables</a><h2>
       </section>
@@ -45,101 +45,109 @@
         <section class="subcontainer-top" role="region" aria-role="presentation">
           <h2 aria-role="sub-heading">Shop by category</h2>
           <div class="product-list categories" aria-role="presentation">
-            <a role="navigation" aria-role="navigation-link" href="living.html" class="product-category">
-              <div class="image-container" aria-role="presentation">
+            <a href="living.html" class="product-category" role="navigation" aria-role="navigation-link">
+              <article class="image-container" aria-role="article">
                 <img src="resources/img/home/living-room.jpg" alt="living room with a couch table and chair">
-              </div>
+                <!--Add a label Aria can read-->
+                  <!--<h2 role="complementary">living-room</h2>-->
+              </article>
 
             </a>
-            <a role="navigation" aria-role="navigation-link" href="bedroom.html" class="product-category">
-              <div class="image-container" aria-role="presentation">
+            <a href="bedroom.html" class="product-category" role="navigation" aria-role="navigation-link">
+              <article class="image-container" aria-role="article">
                 <img src="resources/img/home/bedroom.jpg" alt="bedroom with large bed and nightstand">
-              </div>
+                <!--Add a label Aria can read-->
+                <!--<h2 role="complementary">Bedroom</h2>-->
+              </article>
 
             </a>
-            <a role="navigation" aria-role="navigation-link" href="bathroom.html" class="product-category">
-              <div class="image-container" aria-role="presentation">
+            <a href="bathroom.html" class="product-category" role="navigation" aria-role="navigation-link">
+              <article class="image-container" aria-role="article">
                 <img src="resources/img/home/bathroom.jpg" alt="bathroom with a cast iron tub">
-              </div>
+                <!--Add a label Aria can read-->
+                  <!--<h2 role="complementary">Bathroom</h2>-->
+              </article>
 
             </a>
-            <a role="navigation" aria-role="navigation-link" href="dining.html" class="product-category">
-              <div class="image-container" aria-role="presentation">
+            <a href="dining.html" class="product-category" role="navigation" aria-role="navigation-link">
+              <article class="image-container" aria-role="article">
                 <img src="resources/img/home/dining-room.jpg" alt="large wooden table with black chairs">
-              </div>
+                <!--Add a label Aria can read-->
+                  <!--<h2 role="complementary">dining-room</h2>-->
+              </article>
             </a>
           </div>
         </section>
 
         <!-- Recently Viewed Products -->
-        <div class="subcontainer-bottom" role="region" aria-role="presentation">
+        <div class="subcontainer-bottom" aria-role="presentation" role="region" >
           <h2 aria-role="sub-heading">Recently Viewed</h2>
           <div class="product-list" aria-role="presentation">
-            <a href="#" class="product-item">
-              <div class="image-container">
+            <a href="#" class="product-item" aria-role="navigation-link">
+              <div class="image-container" aria-role="presentation">
                 <img src="resources/img/home/yellow-chair.jpg" alt="yellow slatted chair">
               </div>
               <div class="description" aria-role="presentation">
-                <h3>Yellow Chair</h3>
-                <span aria-label="price" class="price">$189</span>
+                <h3 role="complementary">Yellow Chair</h3>
+                <span class="price" aria-label="price">$189</span>
               </div>
             </a>
-            <a href="#" class="product-item">
-              <div class="image-container">
-                <img src="resources/img/home/round-table.jpg">
+            <a href="#" class="product-item" aria-role="navigation-link">
+              <div class="image-container" aria-role="presentation">
+                <img src="resources/img/home/round-table.jpg" alt="">
               </div>
-              <div class="description">
-                <h3>Round Table</h3>
-                <span class="price">$249</span>
-              </div>
-            </a>
-            <a href="#" class="product-item">
-              <div class="image-container">
-                <img src="resources/img/home/white-chair.jpg">
-              </div>
-              <div class="description">
-                <h3>White Chair</h3>
-                <span class="price">$99</span>
+              <div class="description" aria-role="presentation">
+                <h3 role="complementary">Round Table</h3>
+                <span class="price" aria-label="price">$249</span>
               </div>
             </a>
-            <a href="#" class="product-item">
-              <div class="image-container">
-                <img src="resources/img/home/desk-lamp.jpg">
+            <a href="#" class="product-item" aria-role="navigation-link">
+              <div class="image-container" aria-role="presentation">
+                <img src="resources/img/home/white-chair.jpg" alt="">
               </div>
-              <div class="description">
-                <h3>Desk Lamp</h3>
-                <span class="price">$25</span>
+              <div class="description" aria-role="presentation">
+                <h3 role="complementary">White Chair</h3>
+                <span class="price" aria-label="price">$99</span>
+              </div>
+            </a>
+            <a href="#" class="product-item" aria-role="navigation-link">
+              <div class="image-container" aria-role="presentation">
+                <img src="resources/img/home/desk-lamp.jpg" alt="">
+              </div>
+              <div class="description" aria-role="presentation">
+                <h3 role="complementary">Desk Lamp</h3>
+                <span class="price" aria-label="price">$25</span>
               </div>
             </a>
           </div>
         </div>
       </div>
-    </div>
+    </main>
 
     <!-- Footer -->
 
     <footer>
-      <img src="resources/img/home.png">
-      <div class="links">
-        <h4>Get to know us</h4>
-        <a href="#">About us</a>
-        <a href="jobs.html">Jobs</a>
-        <a href="#">Investor relations</a>
-        <a href="#">Link</a>
+      <img src="resources/img/home.png" alt="">
+      <div class="links" aria-label="footer-navigation" role="presentation">
+        <h4 aria-role="sub-heading">Get to know us</h4>
+        <a href="about.html" role="navigation-link" aria-label="site-navigation">About us</a>
+        <a href="jobs.html" role="navigation-link" aria-label="site-navigation">Jobs</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Investor relations</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Link</a>
       </div>
-      <div class="links">
-        <h4>Make money with us</h4>
-        <a href="sell.html">Sell on WareHouse</a>
-        <a href="#">Become a vendor</a>
-        <a href="#">Fundraiser events</a>
-        <a href="#">Community outreach</a>
+      <div class="links" aria-label="footer-navigation" role="presentation">
+        <h4 aria-role="sub-heading">Make money with us</h4>
+        <a href="sell.html" role="navigation-link" aria-label="site-navigation">Sell on WareHouse</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Become a vendor</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Fundraiser events</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Community outreach</a>
       </div>
-      <div class="links">
-        <h4>Help</h4>
-        <a href="#">Contact us</a>
-        <a href="#">Conditions of use</a>
-        <a href="#">Report a problem</a>
-        <a href="#">Privacy Policy</a>
+      <div class="links" aria-label="footer-navigation" role="presentation">
+        <h4 aria-role="sub-heading">Help</h4>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Contact us</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Conditions of use</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Report a problem</a>
+        <a href="#" role="navigation-link" aria-label="site-navigation">Privacy Policy</a>
       </div>
     </footer>
   </div>
