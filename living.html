@@ -32,31 +32,31 @@
 
     <!-- Living Room List Section -->
 
-    <div id="main" class="product-list-section">
-      <ul class="breadcrumb">
-        <li><a class="location" href="index.html">Home</a></li>
-        <li><a class="location" href="products.html">All Products</a></li>
-        <li><a class="location" href="#">Living</a></li>
+    <main id="main" class="about" aria-labelledby="main">
+      <ul class="breadcrumb" aria-role="presentation">
+        <li><a class="location" href="index.html" aria-role="navigation-link">Home</a></li>
+        <li><a class="location" href="products.html" aria-role="navigation-link">All Products</a></li>
+        <li><a class="location" href="#" aria-role="navigation-link">Living</a></li>
       </ul>
 
-      <div class="product-list">
-        <a href="sofas.html" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/living/sofas.jpg">
+      <section class="product-list" aria-role="region">
+        <a href="sofas.html" class="product-item" aria-role="navigation-link">
+          <div class="image-container" aria-role="complementary">
+            <img src="resources/img/living/sofas.jpg" alt="">
           </div>
         </a>
-        <a href="chairs.html" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/living/chairs.jpg">
+        <a href="chairs.html" class="product-item" aria-role="navigation-link">
+          <div class="image-container" aria-role="complementary">
+            <img src="resources/img/living/chairs.jpg" alt="">
           </div>
         </a>
-        <a href="tables.html" class="product-item">
-          <div class="image-container">
-            <img src="resources/img/living/tables.jpg">
+        <a href="tables.html" class="product-item" aria-role="navigation-link">
+          <div class="image-container" aria-role="complementary">
+            <img src="resources/img/living/tables.jpg" alt="">
           </div>
         </a>
-      </div>
-    </div>
+      </section>
+    </main>
 
     <!-- Footer -->
 

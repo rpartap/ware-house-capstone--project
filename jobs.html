@@ -33,11 +33,11 @@
 
     <!-- Job List Section -->
 
-    <div id="main" class="jobs">
-      <ul class="breadcrumb">
-        <li><a class="location" href="index.html">Home</a></li>
-        <li><a class="location" href="about.html">About</a></li>
-        <li><a class="attribute" href="#">Jobs</a></li>
+    <main id="main" class="about" aria-labelledby="main">
+      <ul class="breadcrumb" aria-role="presentation">
+        <li><a class="location" href="index.html" aria-role="navigation-link">Home</a></li>
+        <li><a class="location" href="about.html" aria-role="navigation-link">About</a></li>
+        <li><a class="attribute" href="#" aria-role="nagigation-link">Jobs</a></li>
       </ul>
 
       <h3>Jobs</h3>
@@ -45,60 +45,60 @@
       <!-- Job Search Bar -->
 
       <form>
-        <div id="name" class="field">
+        <div id="name" class="field" aria-labelledby="name">
           <label for="name">Search for a Job</label>
           <input type="text" name="name" placeholder="Job Title or Location">
         </div>
-        <div id="name" class="field">
 
+        <div id="name" class="field" aria-labelledby="name">
           <input type="text" name="name" placeholder="">
         </div>
-        <a href="#" class="button">Go</a>
+        <a href="#" class="button" aria-role="button">Go</a>
       </form>
 
       <!-- Recently Posted Job List -->
 
-      <h3>Recently Posted</h3>
-      <div class="job-list">
-        <div class="job">
-          <h4>Director, Showroom Experience</h4>
-          <span>New York, NY</span>
+      <h3 aria-role="sub-heading">Recently Posted</h3>
+      <section class="job-list" aria-role="region">
+        <div class="job" aria-role="complementary">
+          <h4 aria-label="title">Director, Showroom Experience</h4>
+          <span aria-label="location">New York, NY</span>
         </div>
-        <div class="job">
-          <h4>Senior Manager, Showroom Experience</h4>
-          <span>New York, NY</span>
+        <div class="job" aria-role="complementary">
+          <h4 aria-label="title">Senior Manager, Showroom Experience</h4>
+          <span aria-label="location">New York, NY</span>
         </div>
-        <div class="job">
-          <h4>Executive Assistant</h4>
-          <span>New York, NY</span>
+        <div class="job" aria-role="complementary">
+          <h4 aria-label="title">Executive Assistant</h4>
+          <span aria-label="location">New York, NY</span>
         </div>
-        <div class="job">
-          <h4>Marketing Manager, Digital Acquisition</h4>
-          <span>New York, NY</span>
+        <div class="job" aria-role="complementary">
+          <h4 aria-label="title">Marketing Manager, Digital Acquisition</h4>
+          <span aria-label="location">New York, NY</span>
         </div>
-        <div class="job">
-          <h4>Seniore Software Engineer</h4>
-          <span>New York, NY</span>
+        <div class="job" aria-role="complementary">
+          <h4 aria-label="title">Senior Software Engineer</h4>
+          <span aria-label="location">New York, NY</span>
         </div>
-        <div class="job">
-          <h4>Principal Researcher</h4>
-          <span>New York, NY</span>
+        <div class="job" aria-role="complementary">
+          <h4 aria-label="title">Principal Researcher</h4>
+          <span aria-label="location">New York, NY</span>
         </div>
-        <div class="job">
-          <h4>Software Engineer, Campus Recruiter</h4>
-          <span>New York, NY</span>
+        <div class="job" aria-role="complementary">
+          <h4 aria-label="title">Software Engineer, Campus Recruiter</h4>
+          <span aria-label="location">New York, NY</span>
         </div>
-        <div class="job">
-          <h4>Staff Engineer</h4>
-          <span>New York, NY</span>
+        <div class="job" aria-role="complementary">
+          <h4 aria-label="title">Staff Engineer</h4>
+          <span aria-label="location">New York, NY</span>
         </div>
-        <div class="job">
-          <h4>Director of Data Engineering</h4>
-          <span>New York, NY</span>
+        <div class="job" aria-role="complementary">
+          <h4 aria-label="title">Director of Data Engineering</h4>
+          <span aria-label="location">New York, NY</span>
         </div>
-      </div>
+      </section>
     <!--  <a href="#" class="button" id="see-all-jobs">See All Open Jobs</a> -->
-    </div>
+  </main>
 
     <!-- Footer -->
 
