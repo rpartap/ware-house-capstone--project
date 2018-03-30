@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
   <link rel="stylesheet" type="text/css" href="resources/css/base.css">
   <link rel="stylesheet" type="text/css" href="resources/css/index.css">
+  <script rel="stylesheet" type="text/javascript" src="resources/js/navigation.js"></script>
   <link href="https://fonts.googleapis.com/css?family=PT+Serif:700" rel="stylesheet">
 </head>
 <body>
@@ -30,6 +31,16 @@
       <a href="help.html" role="navigation-link" aria-label="site-navigation">Help</a>
     </nav>
 
+    <div class="mobile-nav" id="myTopnav" aria-role="presentation">
+      <a href="#" class="active">Home</a>
+      <a href="deals.html">Deals</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About</a>
+      <a href="sell.html">Sell</a>
+      <a href="help.html">Help</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
     <!-- Hero Section -->
 
     <main id="main" class="landing" aria-labelledby="main">
@@ -47,35 +58,31 @@
           <div class="product-list categories" aria-role="presentation">
             <a href="living.html" class="product-category" role="navigation" aria-role="navigation-link">
               <article class="image-container" aria-role="article">
-                <img src="resources/img/home/living-room.jpg" alt="living room with a couch table and chair">
-                <!--Add a label Aria can read-->
-                  <!--<h2 role="complementary">living-room</h2>-->
+                <img src="resources/img/home/living-room.jpg" alt="Living room">
               </article>
-
             </a>
+
+            <!-- Since the images in the next section already had words on them, I chose to mak the alternate
+            text for the images to say what category it was.-->
+
             <a href="bedroom.html" class="product-category" role="navigation" aria-role="navigation-link">
               <article class="image-container" aria-role="article">
-                <img src="resources/img/home/bedroom.jpg" alt="bedroom with large bed and nightstand">
-                <!--Add a label Aria can read-->
-                <!--<h2 role="complementary">Bedroom</h2>-->
+                <img src="resources/img/home/bedroom.jpg" alt="Bedroom">
               </article>
-
             </a>
+
             <a href="bathroom.html" class="product-category" role="navigation" aria-role="navigation-link">
               <article class="image-container" aria-role="article">
-                <img src="resources/img/home/bathroom.jpg" alt="bathroom with a cast iron tub">
-                <!--Add a label Aria can read-->
-                  <!--<h2 role="complementary">Bathroom</h2>-->
+                <img src="resources/img/home/bathroom.jpg" alt="Bathroom">
               </article>
-
             </a>
+
             <a href="dining.html" class="product-category" role="navigation" aria-role="navigation-link">
               <article class="image-container" aria-role="article">
-                <img src="resources/img/home/dining-room.jpg" alt="large wooden table with black chairs">
-                <!--Add a label Aria can read-->
-                  <!--<h2 role="complementary">dining-room</h2>-->
+                <img src="resources/img/home/dining-room.jpg" alt="Dining room">
               </article>
             </a>
+
           </div>
         </section>
 

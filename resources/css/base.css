@@ -355,10 +355,47 @@ nav a:visted {
 }
 
 
+/* Add a black background color to the top navigation */
+.mobile-nav {
+    background-color: #333;
+    overflow: hidden;
+    border-top: 5px solid ivory;
+}
+
+/* Style the links inside the navigation bar */
+.mobile-nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.mobile-nav a:hover {
+  background-color: ivory;
+  color: hsla(0, 0%, 29%, 1);
+
+}
+
+/* Add an active class to highlight the current page */
+.active {
+    background-color: #A6A0D0;
+    color: ivory;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.mobile-nav .icon {
+    display: none;
+}
+  }
+
 @media only screen and (max-width: 1100px) {
   header {
     grid-template-columns: 1fr;
-    justify-items: center;
+    justify-content: center;
   }
 
   .cart {
@@ -370,7 +407,41 @@ nav a:visted {
   nav {
     grid-template-columns: 1fr;
   }
+
+  .main-nav {
+    display: none;
+  }
+
+  .search-bar {
+    width: 50%;
+  }
+
+  .mobile-nav a:not(:first-child) {
+    display: none;
+  }
+
+  .mobile-nav a.icon {
+    float: right;
+    display: block;
+  }
+
+  .mobile-nav.responsive {
+    position: relative;
+  }
+
+  .mobile-nav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .mobile-nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }
+
 
 /* Main Section */
 
