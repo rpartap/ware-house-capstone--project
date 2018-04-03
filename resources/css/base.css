@@ -125,7 +125,7 @@ select {
   flex-grow: 1;
   flex-shrink: 1;
   max-width: 100%;
-  min-width: 100px;
+  min-width: 200px;
   height: auto;
 }
 
@@ -146,7 +146,33 @@ select {
     width: 30%;
     height: auto;
   }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
 }
+
+@media only screen and (max-width: 530px) {
+  .sub-container-top, .subcontainer-bottom {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+
 
 /* Reusable Component - Product List */
 
